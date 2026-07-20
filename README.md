@@ -1,6 +1,6 @@
-# IBM Full Stack Software Developer Capstone Project
+# Car Dealership Management Solution
 
-This is the final capstone project for the [IBM Full Stack Software Developer Professional Certificate](https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer). It demonstrates the implementation of a complete full-stack web application, including front-end, back-end, and database layers.
+A full-stack, multi-service web application built using React, Django, Node.js, and MongoDB. The system provides dealer listings, customer reviews, authentication, and sentiment analysis using IBM Watson NLU. The project demonstrates modern full-stack development, API integration, microservice architecture, cloud-native deployment using Docker and Kubernetes.
 
 > **Forked from** IBM Developer Skills Network — Credit to IBM and course instructors.
 
@@ -8,7 +8,7 @@ This is the final capstone project for the [IBM Full Stack Software Developer Pr
 
 ## 🚀 Project Overview
 
-This project adds user authentication and integrates multiple backend services to build a full-stack application for managing car dealerships and user reviews. Key features include:
+Car Dealership Management Solution integrates multiple backend services with a React frontend to deliver complete dealershipi and review management platform. The application support user authentication, dealer browising, review submission, and automated sentiment analysis. Key features include:
 
 ### ✅ Features
 
