@@ -1,47 +1,122 @@
-<html>
-
+```html
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="/static/assests/css/style.css">
-  <link rel="stylesheet" href="/static/assests/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/static/assests/css/contact.css">
-   <script src="/static/assests/js/checksession.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Car Dealership</title>
+
+    <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/assets/css/style.css">
+
+    <style>
+        .contact-container {
+            width: 80%;
+            max-width: 900px;
+            margin: 50px auto;
+        }
+
+        .contact-card {
+            padding: 25px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .contact-card h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact-card p {
+            line-height: 1.8;
+        }
+    </style>
 </head>
 
-<body onload="checkSession()">
- {% include 'Navbar.html' with active=active %}
-  <div style="display: flex;flex-direction: column;">
-    <div class="card " style="width: 50%;margin-top: 50px;align-self: center;">
-      <!-- Top Image -->
-      <img src="/static/assests/images/cars.jpeg" alt="Top Banner" class="top-image">
+<body>
 
-      <!-- Card Content -->
-      <div class="card-content">
-        <!-- Left: Customer Support Image -->
-        <div class="left-side">
-          <img src="/static/assests/images/support.png" alt="Support" class="support-image">
-        </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    Car Dealership
+                </a>
 
+                <button class="navbar-toggler" type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarMenu"
+                        aria-controls="navbarMenu"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <!-- Divider -->
-        <div class="divider"></div>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
 
-        <!-- Right: Contact Us Text -->
-        <div class="contact-details">
-          <h3>Contact Customer Service</h3>
-          <p> support@bsdamericaibmfsd.com</p>
-          <h3>Contact our National Advertising Team </h3>
-          <p> nationalsales@bsdamericaibmfsd.com</p>
-          <h3>Contact our Public Relation Team</h3>
-          <p> pr@bsdamericaibmfsd.com</p>
-          <h3>Contact the bsdamericaibmfsd.com office</h3>
-          <p> 101-011-1010</p>
-          <h3>Become a bsdamericaibmfsd.com car dealer</h3>
-          <p> visit growwithbsdamericaibmfsd.com</p>
-        </div>
-      </div>
-    </div>
-  </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Dealers.html">Dealers</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html">About Us</a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link active"
+                               href="Contact.html"
+                               aria-current="page">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <section class="contact-card">
+            <h1>Contact Us</h1>
+            <p>
+                Welcome to our Car Dealership. If you have any questions
+                about our dealerships or services, please contact us
+                using the information below.
+            </p>
+        </section>
+
+        <section class="contact-card">
+            <h2>Contact Information</h2>
+
+            <p>
+                <strong>Address:</strong>
+                Add your existing dealership address here.
+            </p>
+
+            <p>
+                <strong>Phone:</strong>
+                Add your existing contact number here.
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                Add your existing contact email here.
+            </p>
+        </section>
+    </main>
+
+    <footer class="text-center bg-dark text-white p-3">
+        <p class="mb-0">
+            Car Dealership
+        </p>
+    </footer>
+
+    <script src="/static/assets/js/jquery.min.js"></script>
+    <script src="/static/assets/js/bootstrap.min.js"></script>
+
 </body>
 </html>
-
-
+```
